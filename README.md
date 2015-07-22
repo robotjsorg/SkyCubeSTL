@@ -1,6 +1,6 @@
 # SkyCubeSTL
 
-A test of adding an STL model to SceneKit. Trying to get the MDLSkyCubeTexture to work with the STL model. See Simon Gladman's original project below. https://github.com/FlexMonkey/SkyCubeTextureDemo
+A test of adding an STL model to SceneKit. Trying to get the MDLSkyCubeTexture to work with the STL model. See [FlexMonkey's](https://github.com/FlexMonkey) original project below. https://github.com/FlexMonkey/SkyCubeTextureDemo
 
 I've added an STL file with this code:
 ```
