@@ -45,7 +45,6 @@ class ViewController: UIViewController
     let path = bundle.pathForResource("BUILDINGMETHOD2", ofType: "STL")
     let url = NSURL(fileURLWithPath: path!)
     let asset = MDLAsset(URL: url)
-    let sceneKitScene = SCNScene(MDLAsset: asset)
 
     view.addSubview(mainGroup)
     mainGroup.axis = UILayoutConstraintAxis.Vertical
@@ -92,6 +91,22 @@ class ViewController: UIViewController
     sceneKitScene.rootNode.addChildNode(torusNode)
     torusNode.runAction(SCNAction.repeatActionForever(SCNAction.rotateByX(1, y: 3, z: 5, duration: 3)))
 
+    let torus2 = SCNTorus(ringRadius: 6, pipeRadius: 2)
+    let torus2Node = SCNNode(geometry: torus2)
+    torus2Node.position = SCNVector3(x: 10, y: 10, z: 0)
+    sceneKitScene.rootNode.addChildNode(torus2Node)
+    torus2Node.runAction(SCNAction.repeatActionForever(SCNAction.rotateByX(1, y: 3, z: 5, duration: 3)))
+
+    let box = SCNBox(width: 20, height: 40, length: 60, chamferRadius: 0)
+    let boxNode = SCNNode(geometry: box)
+    boxNode.position = SCNVector3(x: -10, y: -10, z: -60)
+    sceneKitScene.rootNode.addChildNode(boxNode)
+    boxNode.runAction(SCNAction.repeatActionForever(SCNAction.rotateByX(1, y: 3, z: 5, duration: 3)))
+
+    let mesh = asset.objectAtIndex(0)
+    let meshNode = SCNNode(MDLObject: mesh)
+    sceneKitScene.rootNode.addChildNode(meshNode)
+
     material.shininess = 0.15
     material.fresnelExponent = 0.25
 
@@ -99,6 +114,9 @@ class ViewController: UIViewController
     material.diffuse.contents =  UIColor.darkGrayColor()
 
     torus.materials = [material]
+    torus2.materials = [material]
+    box.materials = [material]
+    meshNode.geometry!.materials = [material]
     sceneKitScene.rootNode.childNodeWithName("BUILDINGMETHOD2", recursively: false)?.geometry?.materials = [material]
 
     sliderChangeHandler()
@@ -142,9 +160,9 @@ class ViewController: UIViewController
   override func viewDidLayoutSubviews()
   {
     let top = topLayoutGuide.length
-
+    
     mainGroup.frame = CGRect(x: 0, y: top, width: view.frame.width, height: view.frame.height - top)
   }
-
-
+  
+  
 }
