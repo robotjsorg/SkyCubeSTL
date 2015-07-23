@@ -105,6 +105,14 @@ class ViewController: UIViewController
 
     let mesh = asset.objectAtIndex(0)
     let meshNode = SCNNode(MDLObject: mesh)
+    meshNode.rotation = SCNVector4(x: 0, y: 1, z: 1, w: Float(M_PI))
+    meshNode.position = SCNVector3(x: 40, y: 40, z: 40)
+
+    print(mesh)
+    print(meshNode)
+    print(meshNode.geometry!)
+    print(meshNode.geometry!.materials)
+
     sceneKitScene.rootNode.addChildNode(meshNode)
 
     material.shininess = 0.15
@@ -117,7 +125,6 @@ class ViewController: UIViewController
     torus2.materials = [material]
     box.materials = [material]
     meshNode.geometry!.materials = [material]
-    sceneKitScene.rootNode.childNodeWithName("BUILDINGMETHOD2", recursively: false)?.geometry?.materials = [material]
 
     sliderChangeHandler()
   }
