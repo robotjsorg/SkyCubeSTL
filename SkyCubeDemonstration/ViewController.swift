@@ -5,7 +5,7 @@
 //  Created by Simon Gladman on 11/07/2015.
 //  Copyright © 2015 Simon Gladman. All rights reserved.
 //
-//  STL model added by Joseph McMahon.
+//  Modified by Joseph McMahon on 25/07/2015.
 
 import UIKit
 import SceneKit
@@ -16,7 +16,7 @@ class ViewController: UIViewController
   let mainGroup = UIStackView()
 
   let sceneKitView = SCNView()
-  let sceneKitScene = SCNScene()
+  let scene = SCNScene(named: "art.scnassets/BuildingScene.scn")!
 
   let turbiditySlider = SliderWidget(title: "Turbidity")
   let sunElevationSlider = SliderWidget(title: "Sun Elevation")
@@ -41,11 +41,6 @@ class ViewController: UIViewController
   {
     super.viewDidLoad()
 
-    let bundle = NSBundle.mainBundle()
-    let path = bundle.pathForResource("BUILDINGMETHOD2", ofType: "STL")
-    let url = NSURL(fileURLWithPath: path!)
-    let asset = MDLAsset(URL: url)
-
     view.addSubview(mainGroup)
     mainGroup.axis = UILayoutConstraintAxis.Vertical
 
@@ -66,7 +61,7 @@ class ViewController: UIViewController
     upperAtmosphereScatteringSlider.addTarget(self, action: "sliderChangeHandler", forControlEvents: UIControlEvents.ValueChanged)
     groundAlbedoSlider.addTarget(self, action: "sliderChangeHandler", forControlEvents: UIControlEvents.ValueChanged)
 
-    sceneKitView.scene = sceneKitScene
+    sceneKitView.scene = scene
 
     let camera = SCNCamera()
 
@@ -81,50 +76,24 @@ class ViewController: UIViewController
     cameraNode.position = SCNVector3(x: 0, y: 0, z: -20)
     cameraNode.rotation = SCNVector4(x: 0, y: 1, z: 0, w: Float(M_PI))
 
-    sceneKitScene.rootNode.addChildNode(cameraNode)
+    scene.rootNode.addChildNode(cameraNode)
 
     sceneKitView.allowsCameraControl = true
 
-    let torus = SCNTorus(ringRadius: 6, pipeRadius: 2)
-    let torusNode = SCNNode(geometry: torus)
-    torusNode.position = SCNVector3(x: 0, y: 0, z: 0)
-    sceneKitScene.rootNode.addChildNode(torusNode)
-    torusNode.runAction(SCNAction.repeatActionForever(SCNAction.rotateByX(1, y: 3, z: 5, duration: 3)))
-
-    let torus2 = SCNTorus(ringRadius: 6, pipeRadius: 2)
-    let torus2Node = SCNNode(geometry: torus2)
-    torus2Node.position = SCNVector3(x: 10, y: 10, z: 0)
-    sceneKitScene.rootNode.addChildNode(torus2Node)
-    torus2Node.runAction(SCNAction.repeatActionForever(SCNAction.rotateByX(1, y: 3, z: 5, duration: 3)))
-
-    let box = SCNBox(width: 20, height: 40, length: 60, chamferRadius: 0)
-    let boxNode = SCNNode(geometry: box)
-    boxNode.position = SCNVector3(x: -10, y: -10, z: -60)
-    sceneKitScene.rootNode.addChildNode(boxNode)
-    boxNode.runAction(SCNAction.repeatActionForever(SCNAction.rotateByX(1, y: 3, z: 5, duration: 3)))
-
-    let mesh = asset.objectAtIndex(0)
-    let meshNode = SCNNode(MDLObject: mesh)
-    meshNode.rotation = SCNVector4(x: 0, y: 1, z: 1, w: Float(M_PI))
-    meshNode.position = SCNVector3(x: 40, y: 40, z: 40)
-
-    print(mesh)
-    print(meshNode)
-    print(meshNode.geometry!)
-    print(meshNode.geometry!.materials)
-
-    sceneKitScene.rootNode.addChildNode(meshNode)
+    let sphere = SCNSphere(radius: 400)
+    let sphereNode = SCNNode(geometry: sphere)
+    sphereNode.position = SCNVector3(x: 600, y: 600, z: 600)
+    scene.rootNode.addChildNode(sphereNode)
 
     material.shininess = 0.15
     material.fresnelExponent = 0.25
-
     material.specular.contents = UIColor.whiteColor()
     material.diffuse.contents =  UIColor.darkGrayColor()
 
-    torus.materials = [material]
-    torus2.materials = [material]
-    box.materials = [material]
-    meshNode.geometry!.materials = [material]
+    //scene.rootNode.childNodeWithName("Building", recursively: true)!.geometry!.materials = [material]
+    scene.rootNode.childNodeWithName("Building", recursively: true)!.geometry!.materials[0].reflective.contents = self.sky.imageFromTexture()?.takeUnretainedValue()
+    scene.rootNode.childNodeWithName("floor", recursively: true)!.geometry!.materials = [material]
+    sphere.materials = [material]
 
     sliderChangeHandler()
   }
@@ -149,7 +118,7 @@ class ViewController: UIViewController
         self.sky.updateTexture()
 
         self.material.reflective.contents = self.sky.imageFromTexture()?.takeUnretainedValue()
-        self.sceneKitScene.background.contents = self.sky.imageFromTexture()?.takeUnretainedValue()
+        self.scene.background.contents = self.sky.imageFromTexture()?.takeUnretainedValue()
 
         dispatch_async(dispatch_get_main_queue())
           {
@@ -167,9 +136,8 @@ class ViewController: UIViewController
   override func viewDidLayoutSubviews()
   {
     let top = topLayoutGuide.length
-    
+
     mainGroup.frame = CGRect(x: 0, y: top, width: view.frame.width, height: view.frame.height - top)
   }
-  
-  
+
 }

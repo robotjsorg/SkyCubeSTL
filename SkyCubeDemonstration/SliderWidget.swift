@@ -5,6 +5,7 @@
 //  Created by Simon Gladman on 04/11/2014.
 //  Copyright (c) 2014 Simon Gladman. All rights reserved.
 //
+//  Modified by Joseph McMahon on 25/07/2015.
 
 import UIKit
 
