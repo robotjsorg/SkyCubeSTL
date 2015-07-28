@@ -11,12 +11,11 @@ import UIKit
 import SceneKit
 import MetalKit
 
-class ViewController: UIViewController
-{
+class ViewController: UIViewController {
   let mainGroup = UIStackView()
 
   let theView = SCNView()
-  let scene = SCNScene(named: "art.scnassets/BuildingScene.scn")!
+  let scene = SCNScene(named: "Art.scnassets/Building.scn")!
 
   let turbiditySlider = SliderWidget(title: "Turbidity")
   let sunElevationSlider = SliderWidget(title: "Sun Elevation")
@@ -37,8 +36,7 @@ class ViewController: UIViewController
   var busy =  false // indicates MDLSkyCubeTexture is updating
   var changePending = false // indicates a pending user change
 
-  override func viewDidLoad()
-  {
+  override func viewDidLoad() {
     super.viewDidLoad()
 
     view.addSubview(mainGroup)
@@ -91,7 +89,6 @@ class ViewController: UIViewController
     material.diffuse.contents =  UIColor.darkGrayColor()
 
     // set building material
-    print(scene.rootNode.childNodeWithName("Building", recursively: true)!.geometry!.materials)
     scene.rootNode.childNodeWithName("Building", recursively: true)!.geometry!.materials = [material]
     // set floor material
     scene.rootNode.childNodeWithName("Floor", recursively: true)!.geometry!.materials = [material]
@@ -101,46 +98,39 @@ class ViewController: UIViewController
     sliderChangeHandler()
   }
 
-  func sliderChangeHandler()
-  {
-    guard !busy else
-    {
+  func sliderChangeHandler() {
+    guard !busy else {
       changePending = true
       return
     }
 
     busy = true
 
-    dispatch_async(queue)
-      {
-        self.sky.turbidity = self.turbiditySlider.value
-        self.sky.upperAtmosphereScattering = self.upperAtmosphereScatteringSlider.value
-        self.sky.sunElevation = self.sunElevationSlider.value
-        self.sky.groundAlbedo = self.groundAlbedoSlider.value
+    dispatch_async(queue) {
+      self.sky.turbidity = self.turbiditySlider.value
+      self.sky.upperAtmosphereScattering = self.upperAtmosphereScatteringSlider.value
+      self.sky.sunElevation = self.sunElevationSlider.value
+      self.sky.groundAlbedo = self.groundAlbedoSlider.value
 
-        self.sky.updateTexture()
+      self.sky.updateTexture()
 
-        self.material.reflective.contents = self.sky.imageFromTexture()?.takeUnretainedValue()
-        self.scene.background.contents = self.sky.imageFromTexture()?.takeUnretainedValue()
+      self.material.reflective.contents = self.sky.imageFromTexture()?.takeUnretainedValue()
+      self.scene.background.contents = self.sky.imageFromTexture()?.takeUnretainedValue()
 
-        dispatch_async(dispatch_get_main_queue())
-          {
-            self.busy = false
+      dispatch_async(dispatch_get_main_queue()) {
+        self.busy = false
 
-            if self.changePending
-            {
-              self.changePending = false
-              self.sliderChangeHandler()
-            }
+        if self.changePending {
+          self.changePending = false
+          self.sliderChangeHandler()
         }
+      }
     }
   }
 
-  override func viewDidLayoutSubviews()
-  {
+  override func viewDidLayoutSubviews() {
     let top = topLayoutGuide.length
 
     mainGroup.frame = CGRect(x: 0, y: top, width: view.frame.width, height: view.frame.height - top)
   }
-
 }
