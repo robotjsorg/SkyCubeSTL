@@ -1,7 +1,7 @@
 # SkyCubeSTL
-Based on work from one of [FlexMonkey](http://flexmonkey.blogspot.com/)'s awesome blog posts: [http://flexmonkey.blogspot.com/2015/07/a-first-look-at-model-ios-sky-cube.html](http://flexmonkey.blogspot.com/2015/07/a-first-look-at-model-ios-sky-cube.html). See [FlexMonkey's GitHub](https://github.com/FlexMonkey) for source code:  [https://github.com/FlexMonkey/SkyCubeTextureDemo](https://github.com/FlexMonkey/SkyCubeTextureDemo).
+Based on work from one of [FlexMonkey's](http://flexmonkey.blogspot.com/) awesome blog posts: [http://flexmonkey.blogspot.com/2015/07/a-first-look-at-model-ios-sky-cube.html](http://flexmonkey.blogspot.com/2015/07/a-first-look-at-model-ios-sky-cube.html). See [FlexMonkey's GitHub](https://github.com/FlexMonkey) for source code:  [https://github.com/FlexMonkey/SkyCubeTextureDemo](https://github.com/FlexMonkey/SkyCubeTextureDemo).
 
-This project is a test of adding an STL model to SceneKit. My next goals are (1) to learn more about 3D mesh materials and how to create and apply them, (2) I also want to understand more about applying generic materials to meshes, and (3) I want to get casted shadows from lights working.
+This project is a test of adding an STL model to SceneKit. My next goals are (1) to learn more about 3D mesh textures and how to generate and apply them, (2) to understand more about applying SceneKit's built-in materials to meshes, and (3) to get shadows working with 3D meshes.
 
 Tested on an iPad Air 1 running iOS 9 beta 4. I am using XCode 7 beta 4 on OS X El Capitan 10.11 beta 5 to build.
 ![iPadAir1_Screenshot](iPadAir1_Screenshot.jpg)
