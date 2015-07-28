@@ -1,7 +1,7 @@
 # SkyCubeSTL
 Based on work from one of [FlexMonkey's](http://flexmonkey.blogspot.com/) awesome blog posts: [http://flexmonkey.blogspot.com/2015/07/a-first-look-at-model-ios-sky-cube.html](http://flexmonkey.blogspot.com/2015/07/a-first-look-at-model-ios-sky-cube.html). See [FlexMonkey's GitHub](https://github.com/FlexMonkey) for source code:  [https://github.com/FlexMonkey/SkyCubeTextureDemo](https://github.com/FlexMonkey/SkyCubeTextureDemo).
 
-This project is a test of adding an STL model to SceneKit. My next goals are to (1) understand 3D mesh textures and how to generate and apply them, (2) use SceneKit's built-in materials with meshes, and (3) get shadows working with 3D meshes.
+This project is a test of adding an STL model to SceneKit. My next goals are to (1) understand 3D mesh textures and how to generate and apply them (primarily using this [3DS MAX process](http://knowledge.autodesk.com/support/3ds-max/learn-explore/caas/CloudHelp/cloudhelp/2015/ENU/3DSMax/files/GUID-76F1E8AE-9E8F-40A7-A948-471D17E09DA9-htm.html)), (2) use SceneKit's built-in materials with meshes, and (3) get shadows working with 3D meshes.
 
 Tested on an iPad Air 1 running iOS 9 beta 4. I am using XCode 7 beta 4 on OS X El Capitan 10.11 beta 5 to build.
 ![iPadAir1_Screenshot](iPadAir1_Screenshot.jpg)
