@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SkyCubeDemonstration.xcodeproj">
+      location = "self:/Users/jmcmahon443/Documents/SkyCubeSTL/SkyCubeSTL.xcodeproj">
    </FileRef>
 </Workspace>

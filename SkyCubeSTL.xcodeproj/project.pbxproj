@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BEB3BF401B5136F500F356B3 /* SkyCubeDemonstration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyCubeDemonstration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB3BF401B5136F500F356B3 /* SkyCubeSTL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyCubeSTL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB3BF431B5136F500F356B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEB3BF451B5136F500F356B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BEB3BF481B5136F500F356B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		BEB3BF411B5136F500F356B3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BEB3BF401B5136F500F356B3 /* SkyCubeDemonstration.app */,
+				BEB3BF401B5136F500F356B3 /* SkyCubeSTL.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BEB3BF3F1B5136F500F356B3 /* SkyCubeDemonstration */ = {
+		BEB3BF3F1B5136F500F356B3 /* SkyCubeSTL */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BEB3BF521B5136F500F356B3 /* Build configuration list for PBXNativeTarget "SkyCubeDemonstration" */;
+			buildConfigurationList = BEB3BF521B5136F500F356B3 /* Build configuration list for PBXNativeTarget "SkyCubeSTL" */;
 			buildPhases = (
 				BEB3BF3C1B5136F500F356B3 /* Sources */,
 				BEB3BF3D1B5136F500F356B3 /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = SkyCubeDemonstration;
+			name = SkyCubeSTL;
 			productName = SkyCubeDemonstration;
-			productReference = BEB3BF401B5136F500F356B3 /* SkyCubeDemonstration.app */;
+			productReference = BEB3BF401B5136F500F356B3 /* SkyCubeSTL.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BEB3BF3B1B5136F500F356B3 /* Build configuration list for PBXProject "SkyCubeDemonstration" */;
+			buildConfigurationList = BEB3BF3B1B5136F500F356B3 /* Build configuration list for PBXProject "SkyCubeSTL" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -117,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BEB3BF3F1B5136F500F356B3 /* SkyCubeDemonstration */,
+				BEB3BF3F1B5136F500F356B3 /* SkyCubeSTL */,
 			);
 		};
 /* End PBXProject section */
@@ -258,8 +258,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SkyCubeDemonstration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.flexmonkey.SkyCubeDemonstration;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = SkyCubeSTL;
+				PRODUCT_NAME = SkyCubeSTL;
 			};
 			name = Debug;
 		};
@@ -269,15 +269,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SkyCubeDemonstration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.flexmonkey.SkyCubeDemonstration;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = SkyCubeSTL;
+				PRODUCT_NAME = SkyCubeSTL;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BEB3BF3B1B5136F500F356B3 /* Build configuration list for PBXProject "SkyCubeDemonstration" */ = {
+		BEB3BF3B1B5136F500F356B3 /* Build configuration list for PBXProject "SkyCubeSTL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BEB3BF501B5136F500F356B3 /* Debug */,
@@ -286,7 +286,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BEB3BF521B5136F500F356B3 /* Build configuration list for PBXNativeTarget "SkyCubeDemonstration" */ = {
+		BEB3BF521B5136F500F356B3 /* Build configuration list for PBXNativeTarget "SkyCubeSTL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BEB3BF531B5136F500F356B3 /* Debug */,
