@@ -51,7 +51,7 @@ class ViewController: UIViewController {
 
     turbiditySlider.value = 0.75
     sunElevationSlider.value = 0.5
-    upperAtmosphereScatteringSlider.value = 0.15
+    upperAtmosphereScatteringSlider.value = 0.45
     groundAlbedoSlider.value = 0.85
 
     turbiditySlider.addTarget(self, action: "sliderChangeHandler", forControlEvents: UIControlEvents.ValueChanged)
@@ -78,22 +78,13 @@ class ViewController: UIViewController {
 
     theView.allowsCameraControl = true
 
-    let sphere = SCNSphere(radius: 400)
-    let sphereNode = SCNNode(geometry: sphere)
-    sphereNode.position = SCNVector3(x: 600, y: 600, z: 600)
-    scene.rootNode.addChildNode(sphereNode)
-
+    material.transparency = 0.75
     material.shininess = 0.15
     material.fresnelExponent = 0.25
     material.specular.contents = UIColor.whiteColor()
     material.diffuse.contents =  UIColor.darkGrayColor()
 
-    // set building material
-    scene.rootNode.childNodeWithName("Building", recursively: true)!.geometry!.materials = [material]
-    // set floor material
-    scene.rootNode.childNodeWithName("Floor", recursively: true)!.geometry!.materials = [material]
-    // set sphere material
-    sphere.materials = [material]
+    scene.rootNode.childNodeWithName("Building_Curtain_Wall", recursively: true)!.geometry!.materials = [material]
 
     sliderChangeHandler()
   }
