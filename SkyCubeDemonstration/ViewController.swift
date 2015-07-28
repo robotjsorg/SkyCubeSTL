@@ -15,7 +15,7 @@ class ViewController: UIViewController
 {
   let mainGroup = UIStackView()
 
-  let sceneKitView = SCNView()
+  let theView = SCNView()
   let scene = SCNScene(named: "art.scnassets/BuildingScene.scn")!
 
   let turbiditySlider = SliderWidget(title: "Turbidity")
@@ -44,7 +44,7 @@ class ViewController: UIViewController
     view.addSubview(mainGroup)
     mainGroup.axis = UILayoutConstraintAxis.Vertical
 
-    mainGroup.addArrangedSubview(sceneKitView)
+    mainGroup.addArrangedSubview(theView)
 
     mainGroup.addArrangedSubview(turbiditySlider)
     mainGroup.addArrangedSubview(sunElevationSlider)
@@ -61,7 +61,7 @@ class ViewController: UIViewController
     upperAtmosphereScatteringSlider.addTarget(self, action: "sliderChangeHandler", forControlEvents: UIControlEvents.ValueChanged)
     groundAlbedoSlider.addTarget(self, action: "sliderChangeHandler", forControlEvents: UIControlEvents.ValueChanged)
 
-    sceneKitView.scene = scene
+    theView.scene = scene
 
     let camera = SCNCamera()
 
@@ -78,7 +78,7 @@ class ViewController: UIViewController
 
     scene.rootNode.addChildNode(cameraNode)
 
-    sceneKitView.allowsCameraControl = true
+    theView.allowsCameraControl = true
 
     let sphere = SCNSphere(radius: 400)
     let sphereNode = SCNNode(geometry: sphere)
@@ -90,9 +90,12 @@ class ViewController: UIViewController
     material.specular.contents = UIColor.whiteColor()
     material.diffuse.contents =  UIColor.darkGrayColor()
 
-    //scene.rootNode.childNodeWithName("Building", recursively: true)!.geometry!.materials = [material]
-    scene.rootNode.childNodeWithName("Building", recursively: true)!.geometry!.materials[0].reflective.contents = self.sky.imageFromTexture()?.takeUnretainedValue()
-    scene.rootNode.childNodeWithName("floor", recursively: true)!.geometry!.materials = [material]
+    // set building material
+    print(scene.rootNode.childNodeWithName("Building", recursively: true)!.geometry!.materials)
+    scene.rootNode.childNodeWithName("Building", recursively: true)!.geometry!.materials = [material]
+    // set floor material
+    scene.rootNode.childNodeWithName("Floor", recursively: true)!.geometry!.materials = [material]
+    // set sphere material
     sphere.materials = [material]
 
     sliderChangeHandler()

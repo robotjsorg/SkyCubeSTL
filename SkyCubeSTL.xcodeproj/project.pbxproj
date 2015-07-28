@@ -13,7 +13,7 @@
 		BEB3BF4B1B5136F500F356B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB3BF4A1B5136F500F356B3 /* Assets.xcassets */; };
 		BEB3BF4E1B5136F500F356B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB3BF4C1B5136F500F356B3 /* LaunchScreen.storyboard */; };
 		BEB3BF761B52953900F356B3 /* SliderWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB3BF751B52953900F356B3 /* SliderWidget.swift */; };
-		CA9FB93B1B6283C100A25824 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9FB93A1B6283C100A25824 /* art.scnassets */; };
+		CA9FB93B1B6283C100A25824 /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9FB93A1B6283C100A25824 /* Art.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		BEB3BF4D1B5136F500F356B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEB3BF4F1B5136F500F356B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEB3BF751B52953900F356B3 /* SliderWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderWidget.swift; sourceTree = "<group>"; };
-		CA9FB93A1B6283C100A25824 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		CA9FB93A1B6283C100A25824 /* Art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Art.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 		BEB3BF421B5136F500F356B3 /* SkyCubeDemonstration */ = {
 			isa = PBXGroup;
 			children = (
-				CA9FB93A1B6283C100A25824 /* art.scnassets */,
+				CA9FB93A1B6283C100A25824 /* Art.scnassets */,
 				BEB3BF431B5136F500F356B3 /* AppDelegate.swift */,
 				BEB3BF451B5136F500F356B3 /* ViewController.swift */,
 				BEB3BF471B5136F500F356B3 /* Main.storyboard */,
@@ -128,7 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEB3BF4E1B5136F500F356B3 /* LaunchScreen.storyboard in Resources */,
-				CA9FB93B1B6283C100A25824 /* art.scnassets in Resources */,
+				CA9FB93B1B6283C100A25824 /* Art.scnassets in Resources */,
 				BEB3BF4B1B5136F500F356B3 /* Assets.xcassets in Resources */,
 				BEB3BF491B5136F500F356B3 /* Main.storyboard in Resources */,
 			);
