@@ -1,7 +1,7 @@
 # SkyCubeSTL
 Based on work from one of [FlexMonkey](http://flexmonkey.blogspot.com/)'s awesome blog posts: [http://flexmonkey.blogspot.com/2015/07/a-first-look-at-model-ios-sky-cube.html](http://flexmonkey.blogspot.com/2015/07/a-first-look-at-model-ios-sky-cube.html). See [FlexMonkey's GitHub](https://github.com/FlexMonkey) for source code:  [https://github.com/FlexMonkey/SkyCubeTextureDemo](https://github.com/FlexMonkey/SkyCubeTextureDemo).
 
-This project is a test of adding an STL model to SceneKit. Trying to get the MDLSkyCubeTexture to work with the STL model.
+This project is a test of adding an STL model to SceneKit. Trying to get the MDLSkyCubeTexture to work with the STL model. My next goal is to learn more about 3D mesh materials and how to create and apply them. I also want to understand more about applying generic materials to meshes. Finally, I want to get casted shadwos from lights working.
 
 Tested on an iPad Air 1 running iOS 9 beta 4. I am using XCode 7 beta 4 on OS X El Capitan 10.11 beta 5 to build.
 ![iPadAir1_Screenshot](iPadAir1_Screenshot.jpg)
