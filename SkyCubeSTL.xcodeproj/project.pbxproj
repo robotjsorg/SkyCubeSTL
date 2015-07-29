@@ -7,25 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BEB3BF441B5136F500F356B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB3BF431B5136F500F356B3 /* AppDelegate.swift */; };
-		BEB3BF461B5136F500F356B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB3BF451B5136F500F356B3 /* ViewController.swift */; };
-		BEB3BF491B5136F500F356B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB3BF471B5136F500F356B3 /* Main.storyboard */; };
-		BEB3BF4B1B5136F500F356B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB3BF4A1B5136F500F356B3 /* Assets.xcassets */; };
-		BEB3BF4E1B5136F500F356B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB3BF4C1B5136F500F356B3 /* LaunchScreen.storyboard */; };
-		BEB3BF761B52953900F356B3 /* SliderWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB3BF751B52953900F356B3 /* SliderWidget.swift */; };
-		CA9FB93B1B6283C100A25824 /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9FB93A1B6283C100A25824 /* Art.scnassets */; };
+		CA3BB3B31B6909B5006400E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3BB3A91B6909B5006400E7 /* AppDelegate.swift */; };
+		CA3BB3B41B6909B5006400E7 /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3BB3AA1B6909B5006400E7 /* Art.scnassets */; };
+		CA3BB3B51B6909B5006400E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3BB3AB1B6909B5006400E7 /* Assets.xcassets */; };
+		CA3BB3B61B6909B5006400E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3BB3AC1B6909B5006400E7 /* LaunchScreen.storyboard */; };
+		CA3BB3B71B6909B5006400E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3BB3AE1B6909B5006400E7 /* Main.storyboard */; };
+		CA3BB3B81B6909B5006400E7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA3BB3B01B6909B5006400E7 /* Info.plist */; };
+		CA3BB3B91B6909B5006400E7 /* SliderWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3BB3B11B6909B5006400E7 /* SliderWidget.swift */; };
+		CA3BB3BA1B6909B5006400E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3BB3B21B6909B5006400E7 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BEB3BF401B5136F500F356B3 /* SkyCubeSTL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyCubeSTL.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEB3BF431B5136F500F356B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BEB3BF451B5136F500F356B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BEB3BF481B5136F500F356B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BEB3BF4A1B5136F500F356B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BEB3BF4D1B5136F500F356B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BEB3BF4F1B5136F500F356B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BEB3BF751B52953900F356B3 /* SliderWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderWidget.swift; sourceTree = "<group>"; };
-		CA9FB93A1B6283C100A25824 /* Art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Art.scnassets; sourceTree = "<group>"; };
+		CA3BB3A91B6909B5006400E7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA3BB3AA1B6909B5006400E7 /* Art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Art.scnassets; sourceTree = "<group>"; };
+		CA3BB3AB1B6909B5006400E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA3BB3AD1B6909B5006400E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA3BB3AF1B6909B5006400E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA3BB3B01B6909B5006400E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA3BB3B11B6909B5006400E7 /* SliderWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderWidget.swift; sourceTree = "<group>"; };
+		CA3BB3B21B6909B5006400E7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +43,7 @@
 		BEB3BF371B5136F500F356B3 = {
 			isa = PBXGroup;
 			children = (
-				BEB3BF421B5136F500F356B3 /* SkyCubeDemonstration */,
+				CA3BB3A81B6909B5006400E7 /* SkyCubeDemonstration */,
 				BEB3BF411B5136F500F356B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,17 +56,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BEB3BF421B5136F500F356B3 /* SkyCubeDemonstration */ = {
+		CA3BB3A81B6909B5006400E7 /* SkyCubeDemonstration */ = {
 			isa = PBXGroup;
 			children = (
-				CA9FB93A1B6283C100A25824 /* Art.scnassets */,
-				BEB3BF431B5136F500F356B3 /* AppDelegate.swift */,
-				BEB3BF451B5136F500F356B3 /* ViewController.swift */,
-				BEB3BF471B5136F500F356B3 /* Main.storyboard */,
-				BEB3BF4A1B5136F500F356B3 /* Assets.xcassets */,
-				BEB3BF4C1B5136F500F356B3 /* LaunchScreen.storyboard */,
-				BEB3BF4F1B5136F500F356B3 /* Info.plist */,
-				BEB3BF751B52953900F356B3 /* SliderWidget.swift */,
+				CA3BB3A91B6909B5006400E7 /* AppDelegate.swift */,
+				CA3BB3AA1B6909B5006400E7 /* Art.scnassets */,
+				CA3BB3AB1B6909B5006400E7 /* Assets.xcassets */,
+				CA3BB3AC1B6909B5006400E7 /* LaunchScreen.storyboard */,
+				CA3BB3AE1B6909B5006400E7 /* Main.storyboard */,
+				CA3BB3B01B6909B5006400E7 /* Info.plist */,
+				CA3BB3B11B6909B5006400E7 /* SliderWidget.swift */,
+				CA3BB3B21B6909B5006400E7 /* ViewController.swift */,
 			);
 			path = SkyCubeDemonstration;
 			sourceTree = "<group>";
@@ -101,6 +102,7 @@
 				TargetAttributes = {
 					BEB3BF3F1B5136F500F356B3 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 425926LNSF;
 					};
 				};
 			};
@@ -127,10 +129,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEB3BF4E1B5136F500F356B3 /* LaunchScreen.storyboard in Resources */,
-				CA9FB93B1B6283C100A25824 /* Art.scnassets in Resources */,
-				BEB3BF4B1B5136F500F356B3 /* Assets.xcassets in Resources */,
-				BEB3BF491B5136F500F356B3 /* Main.storyboard in Resources */,
+				CA3BB3B61B6909B5006400E7 /* LaunchScreen.storyboard in Resources */,
+				CA3BB3B51B6909B5006400E7 /* Assets.xcassets in Resources */,
+				CA3BB3B41B6909B5006400E7 /* Art.scnassets in Resources */,
+				CA3BB3B81B6909B5006400E7 /* Info.plist in Resources */,
+				CA3BB3B71B6909B5006400E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,29 +144,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEB3BF461B5136F500F356B3 /* ViewController.swift in Sources */,
-				BEB3BF761B52953900F356B3 /* SliderWidget.swift in Sources */,
-				BEB3BF441B5136F500F356B3 /* AppDelegate.swift in Sources */,
+				CA3BB3BA1B6909B5006400E7 /* ViewController.swift in Sources */,
+				CA3BB3B91B6909B5006400E7 /* SliderWidget.swift in Sources */,
+				CA3BB3B31B6909B5006400E7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BEB3BF471B5136F500F356B3 /* Main.storyboard */ = {
+		CA3BB3AC1B6909B5006400E7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BEB3BF481B5136F500F356B3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BEB3BF4C1B5136F500F356B3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BEB3BF4D1B5136F500F356B3 /* Base */,
+				CA3BB3AD1B6909B5006400E7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CA3BB3AE1B6909B5006400E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA3BB3AF1B6909B5006400E7 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -255,22 +258,26 @@
 		BEB3BF531B5136F500F356B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SkyCubeDemonstration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SkyCubeSTL;
 				PRODUCT_NAME = SkyCubeSTL;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		BEB3BF541B5136F500F356B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SkyCubeDemonstration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SkyCubeSTL;
 				PRODUCT_NAME = SkyCubeSTL;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
