@@ -265,6 +265,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = SkyCubeSTL;
 				PRODUCT_NAME = SkyCubeSTL;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -278,6 +279,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = SkyCubeSTL;
 				PRODUCT_NAME = SkyCubeSTL;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

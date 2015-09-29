@@ -44,15 +44,15 @@ class ViewController: UIViewController {
 
     mainGroup.addArrangedSubview(theView)
 
-    mainGroup.addArrangedSubview(turbiditySlider)
+    /*mainGroup.addArrangedSubview(turbiditySlider)
     mainGroup.addArrangedSubview(sunElevationSlider)
     mainGroup.addArrangedSubview(upperAtmosphereScatteringSlider)
-    mainGroup.addArrangedSubview(groundAlbedoSlider)
+    mainGroup.addArrangedSubview(groundAlbedoSlider)*/
 
-    turbiditySlider.value = 0.75
-    sunElevationSlider.value = 0.5
-    upperAtmosphereScatteringSlider.value = 0.45
-    groundAlbedoSlider.value = 0.85
+    turbiditySlider.value = 0.85
+    sunElevationSlider.value = 0.4
+    upperAtmosphereScatteringSlider.value = 0.60
+    groundAlbedoSlider.value = 0.60
 
     turbiditySlider.addTarget(self, action: "sliderChangeHandler", forControlEvents: UIControlEvents.ValueChanged)
     sunElevationSlider.addTarget(self, action: "sliderChangeHandler", forControlEvents: UIControlEvents.ValueChanged)
