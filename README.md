@@ -1,5 +1,5 @@
 ## Screenshot
-![Alt Text](https://github.com/jmcmahon443/SkyCubeSTL/SkycubeSTL480p.gif)
+![Alt Text](https://github.com/jmcmahon443/SkyCubeSTL/blob/master/SkycubeSTL480p.gif)
 
 # SkyCubeSTL
 Based on work from one of [FlexMonkey's](http://flexmonkey.blogspot.com/) awesome blog posts: [http://flexmonkey.blogspot.com/2015/07/a-first-look-at-model-ios-sky-cube.html](http://flexmonkey.blogspot.com/2015/07/a-first-look-at-model-ios-sky-cube.html). See [FlexMonkey's GitHub](https://github.com/FlexMonkey) for source code:  [https://github.com/FlexMonkey/SkyCubeTextureDemo](https://github.com/FlexMonkey/SkyCubeTextureDemo).
