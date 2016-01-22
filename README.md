@@ -1,3 +1,6 @@
+## Screenshot
+![Alt Text](https://github.com/jmcmahon443/SkyCubeSTL/SkycubeSTL480p.gif)
+
 # SkyCubeSTL
 Based on work from one of [FlexMonkey's](http://flexmonkey.blogspot.com/) awesome blog posts: [http://flexmonkey.blogspot.com/2015/07/a-first-look-at-model-ios-sky-cube.html](http://flexmonkey.blogspot.com/2015/07/a-first-look-at-model-ios-sky-cube.html). See [FlexMonkey's GitHub](https://github.com/FlexMonkey) for source code:  [https://github.com/FlexMonkey/SkyCubeTextureDemo](https://github.com/FlexMonkey/SkyCubeTextureDemo).
 
@@ -10,7 +13,3 @@ The second method retains the STL model's file extension. This is interesting be
 The model from 3D Warehouse: [https://3dwarehouse.sketchup.com/model.html?id=3045229f7869e46f1756ffd6185bba#!topic/3dwh/sCwqS376OUg](https://3dwarehouse.sketchup.com/model.html?id=3045229f7869e46f1756ffd6185bba#!topic/3dwh/sCwqS376OUg).
 
 I used the first process described above, for the sake of time. Specifically, I used SketchUp to break up the file into different systems and to export to a 3DS file. Then in 3ds Max I could import the 3DS file, save it as a MAX file, and finally add any solid material. Then I exported to STL and added it to my XCode project. Finally, I converted each STL into a SCN file and merged them together.
-
-## Screenshot
-Tested on an iPad Air 1 running iOS 9 beta 4. I am running on XCode 7 beta 4 on OS X El Capitan 10.11 beta 5.
-![iPadAir1_Screenshot](iPadAir1_Screenshot.jpg)
